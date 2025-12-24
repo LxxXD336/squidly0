@@ -12,7 +12,7 @@ const PRESETS: { key: "small" | "medium" | "large"; label: string; value: TextSc
 
 // 如果将来你改了 SCALE_STEPS，这里兜底：找不到就取最近的一个 step
 function nearestStep(v: number): TextScale {
-  let best = SCALE_STEPS[0];
+  let best: TextScale = SCALE_STEPS[0];
   let bestDist = Math.abs(best - v);
   for (const s of SCALE_STEPS) {
     const d = Math.abs(s - v);
