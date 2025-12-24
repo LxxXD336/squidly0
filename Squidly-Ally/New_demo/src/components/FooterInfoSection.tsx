@@ -35,11 +35,11 @@ export default function FooterInfoSection() {
             </a>
             <p className="mt-8 text-xs text-slate-600">© {year} Made by Squidly</p>
             {/* Privacy / Compliance Logos */}
-            <div className="mt-5 h-16 w-[320px] overflow-hidden">
+            <div className="mt-5 h-16 w-[320px]">
               <img
                 src={aicpa}
                 alt="Privacy / Compliance"
-                className="h-full w-full object-cover object-centre opacity-100"
+                className="h-full w-full object-contain object-center opacity-100"
               />
             </div>
           </div>
